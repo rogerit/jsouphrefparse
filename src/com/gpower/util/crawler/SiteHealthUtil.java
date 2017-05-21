@@ -1,4 +1,5 @@
-package com.gpower.util.sitehealthutil;
+package com.gpower.util.crawler;
+/*package com.gpower.util.sitehealthutil;
 
 
 import java.net.HttpURLConnection;
@@ -20,14 +21,14 @@ public class SiteHealthUtil {
 	private Map<String, String> notFoundUrl = new HashMap<String, String>();
 	private Map<String, String> dangerUrl = new HashMap<String, String>();
 
-	/**
+	*//**
 	 * @author zhuyy 下面为新增的 关键词以及包含关键词的链接
-	 */
+	 *//*
 	private Map<String, String> impwordUrl = new HashMap<String, String>();
-	/**
+	*//**
 	 * 判断是否含有设置的风险挂马链接
 	 * 
-	 */
+	 *//*
 	private boolean isTrojan = false;
 
 	public Map<String, String> getDangerUrl() {
@@ -139,15 +140,15 @@ public class SiteHealthUtil {
 		//	LinkTag node = (LinkTag) list.elementAt(i);
 			//String link = node.getLink();
 			String link = null;
-			/*
+			
 			 * URL u2 = new URL(link); uhost1=u2.getHost();
-			 */
+			 
 			if (link != null && !"".equals(link) && !"#".equals(link)
 					&& !";".equals(link)) {
-				/*
+				
 				 * if(!link.startsWith("http://") &&
 				 * !link.startsWith("https://")){ link = url+"/"+link; }
-				 */
+				 
 				// roger
 				URL cUrl = this.constructUrl(link, url, false);
 				if (cUrl != null) {
@@ -271,3 +272,4 @@ public class SiteHealthUtil {
 		this.allUrlSimHash = allUrlSimHash;
 	}
 }
+*/
